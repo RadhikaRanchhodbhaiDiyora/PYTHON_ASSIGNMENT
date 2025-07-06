@@ -1,0 +1,15 @@
+-- 1. Show all tables in the SQLite database
+SELECT name 
+FROM sqlite_master 
+WHERE type = 'table';
+
+-- 2. Show the first 20 rows of each relevant table
+-- Training data (4 training functions)
+SELECT * FROM training_data LIMIT 20;
+
+-- Ideal functions (50 ideal functions)
+SELECT * FROM ideal_functions LIMIT 20;
+
+-- Test data mapping (mapped test points with deviation and ideal function)
+SELECT * FROM test_mapping LIMIT 20;
+
